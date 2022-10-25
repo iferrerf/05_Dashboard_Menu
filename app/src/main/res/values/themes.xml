@@ -51,11 +51,19 @@
         <item name="colorAccent">@color/darkviolet</item>
     </style>
     <style name="SettingsTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/grey</item>
+        <item name="colorPrimaryDark">@color/grey_dark</item>
+        <item name="colorAccent">@color/grey</item>
+    </style>
+    <style name="UserTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <item name="colorPrimary">@color/violet</item>
         <item name="colorPrimaryDark">@color/violet_dark</item>
         <item name="colorAccent">@color/violet</item>
     </style>
-
-
+    <style name="MarketTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryDark">@color/orange_dark</item>
+        <item name="colorAccent">@color/orange</item>
+    </style>
 
 </resources>

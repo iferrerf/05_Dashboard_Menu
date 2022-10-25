@@ -10,5 +10,6 @@ public class EdadCaninaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edad_canina);
+        setTitle(R.string.edadCanina_title);
     }
 }

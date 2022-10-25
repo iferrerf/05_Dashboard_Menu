@@ -1,3 +1,46 @@
 <resources>
+
+    <!-- MENU PRINCIPAL -->
     <string name="app_name">05_Dashboard_Menu</string>
+    <string name="calculator_name">Calculadora</string>
+    <string name="contacts_name">Contactos</string>
+    <string name="canineAge_name">Edad Canina</string>
+    <string name="quizzes_name">Formulario</string>
+    <string name="maps_name">Mapas</string>
+    <string name="gallery_name">Galería de fotos</string>
+    <string name="restaurant_name">Restaurantes</string>
+    <string name="setting_name">Herramientas</string>
+    <string name="market_name">Marcador Baloncesto</string>
+    <string name="user_name">Datos Usuario</string>
+
+    <!-- MI EDAD CANINA -->
+    <string name="edadCanina_title">EDAD CANINA</string>
+
+    <!-- CALCULADORA -->
+    <string name="calculator_title">CALCULADORA</string>
+
+    <!-- QUIZZES -->
+    <string name="quizzes_title">CUESTIONARIO</string>
+
+    <!-- GALERIA -->
+    <string name="galeria_title">GALERIA</string>
+
+    <!-- MAPAS -->
+    <string name="mapas_title">MAPAS</string>
+
+    <!-- RESTAURANTES -->
+    <string name="restaurantes_title">RESTAURANTES</string>
+
+    <!-- HERRAMIENTAS -->
+    <string name="setting_title">HERRAMIENTAS</string>
+
+    <!-- CONTACTOS -->
+    <string name="contactos_title">CONTACTOS</string>
+
+    <!-- MARCADOR BALONCESTO -->
+    <string name="market_title">MARCADOR BALONCESTO</string>
+
+    <!-- PROGRAMMER -->
+    <string name="user_title">PROGRAMADOR</string>
+
 </resources>

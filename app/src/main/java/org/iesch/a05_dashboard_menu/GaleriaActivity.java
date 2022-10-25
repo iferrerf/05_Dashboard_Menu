@@ -10,5 +10,6 @@ public class GaleriaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_galeria);
+        setTitle(R.string.galeria_title);
     }
 }

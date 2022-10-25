@@ -20,7 +20,12 @@
     <color name="darkblue">#5A9CEE</color>
     <color name="darkblue_dark">#417eca</color>
     <color name="darkviolet">#7E50F1</color>
-    <color name="darkviolet_dark">#683dd4</color>
+    <color name="darkviolet_dark">#7547EA</color>
     <color name="violet">#D65AEE</color>
     <color name="violet_dark">#b33ec9</color>
+    <color name="grey">#A6A6A6</color>
+    <color name="grey_ligth">#BAB7B5</color>
+    <color name="grey_dark">#656565</color>
+    <color name="orange">#F18635</color>
+    <color name="orange_dark">#DD660B</color>
 </resources>

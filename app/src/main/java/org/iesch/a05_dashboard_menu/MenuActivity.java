@@ -54,6 +54,14 @@ import org.iesch.a05_dashboard_menu.databinding.ActivityMenuBinding;
                 Intent intent = new Intent(this, SettingsActivity.class);
                 startActivity(intent);
             });
+            binding.rellayUser.setOnClickListener(v -> {
+                Intent intent = new Intent(this, ProgrammerActivity.class);
+                startActivity(intent);
+            });
+            binding.rellayMarcadorBaloncesto.setOnClickListener(v -> {
+                Intent intent = new Intent(this, MarcadorBaloncestoActivity.class);
+                startActivity(intent);
+            });
 
     }
 }

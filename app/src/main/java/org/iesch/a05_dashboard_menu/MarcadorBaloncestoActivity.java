@@ -4,12 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class RestaurantesActivity extends AppCompatActivity {
+public class MarcadorBaloncestoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_restaurantes);
-        setTitle(R.string.restaurantes_title);
+        setContentView(R.layout.activity_marcador_baloncesto);
+        setTitle(R.string.market_title);
     }
 }

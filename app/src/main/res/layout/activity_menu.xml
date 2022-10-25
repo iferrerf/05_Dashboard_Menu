@@ -32,6 +32,94 @@
                     android:layout_marginBottom="8dp">
 
                     <RelativeLayout
+                        android:id="@+id/rellay_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/violet"
+                        android:layout_weight="0.55"
+                        android:clickable="true"
+                        android:layout_marginEnd="8dp"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/imgView9"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerHorizontal="true"
+                                android:adjustViewBounds="true"
+                                android:padding="8dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/user_icon"
+                                app:tint="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imgView9"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/user_name"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rellay_marcadorBaloncesto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/orange"
+                        android:layout_weight="0.65"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/imgView10"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerHorizontal="true"
+                                android:adjustViewBounds="true"
+                                android:padding="8dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/baloncesto"
+                                app:tint="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imgView10"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/market_name"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="8dp">
+
+                    <RelativeLayout
                         android:id="@+id/rellay_calculadora"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -63,7 +151,7 @@
                                 android:layout_below="@id/imgView1"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="5dp"
-                                android:text="Calculadora"
+                                android:text="@string/calculator_name"
                                 android:textColor="@color/white"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
@@ -103,7 +191,7 @@
                                 android:layout_below="@id/imgView2"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="5dp"
-                                android:text="Contactos"
+                                android:text="@string/contacts_name"
                                 android:textColor="@color/white"
                                 android:textStyle="bold"
                                 android:textSize="14sp" />
@@ -151,7 +239,7 @@
                                 android:layout_below="@id/imgView3"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="5dp"
-                                android:text="Edad Canina"
+                                android:text="@string/canineAge_name"
                                 android:textColor="@color/white"
                                 android:textStyle="bold"
                                 android:textSize="14sp" />
@@ -191,7 +279,7 @@
                                 android:layout_below="@id/imgView4"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="5dp"
-                                android:text="App Quizzes"
+                                android:text="@string/quizzes_name"
                                 android:textColor="@color/white"
                                 android:textStyle="bold"
                                 android:textSize="14sp" />
@@ -239,7 +327,7 @@
                                 android:layout_below="@id/imgView5"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="5dp"
-                                android:text="Galería de fotos"
+                                android:text="@string/gallery_name"
                                 android:textColor="@color/white"
                                 android:textStyle="bold"
                                 android:textSize="14sp" />
@@ -279,7 +367,7 @@
                                 android:layout_below="@id/imgView6"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="5dp"
-                                android:text="Mapas"
+                                android:text="@string/maps_name"
                                 android:textColor="@color/white"
                                 android:textStyle="bold"
                                 android:textSize="14sp" />
@@ -326,7 +414,7 @@
                                 android:layout_below="@id/imgView7"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="5dp"
-                                android:text="Restaurantes"
+                                android:text="@string/restaurant_name"
                                 android:textColor="@color/white"
                                 android:textStyle="bold"
                                 android:textSize="14sp" />
@@ -366,7 +454,7 @@
                                 android:layout_below="@id/imgView8"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="5dp"
-                                android:text="Herramientas"
+                                android:text="@string/setting_name"
                                 android:textColor="@color/white"
                                 android:textStyle="bold"
                                 android:textSize="14sp" />

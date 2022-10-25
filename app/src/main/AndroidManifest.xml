@@ -13,34 +13,17 @@
         android:theme="@style/Theme.Design.Light.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".UsersActivity"
+            android:name=".ProgrammerActivity"
             android:exported="false"
-            android:theme="@style/AmigosTheme">
+            android:theme="@style/UserTheme">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".QuizzesActivity"
+            android:name=".MarcadorBaloncestoActivity"
             android:exported="false"
-            android:theme="@style/QuizzesTheme">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".RestaurantesActivity"
-            android:exported="false"
-            android:theme="@style/RestauranteTheme">>
-
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".MapsActivity"
-            android:exported="false"
-            android:theme="@style/MapasTheme">
+            android:theme="@style/MarketTheme">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -48,35 +31,35 @@
         <activity
             android:name=".SettingsActivity"
             android:exported="false"
-            android:theme="@style/SettingsTheme">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:theme="@style/SettingsTheme" />
+        <activity
+            android:name=".RestaurantesActivity"
+            android:exported="false"
+            android:theme="@style/RestauranteTheme" />
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false"
+            android:theme="@style/MapasTheme" />
         <activity
             android:name=".GaleriaActivity"
             android:exported="false"
-            android:theme="@style/GaleriaTheme">>
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:theme="@style/GaleriaTheme" />
+        <activity
+            android:name=".QuizzesActivity"
+            android:exported="false"
+            android:theme="@style/QuizzesTheme" />
         <activity
             android:name=".EdadCaninaActivity"
             android:exported="false"
-            android:theme="@style/PerreteTheme">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:theme="@style/PerreteTheme" />
+        <activity
+            android:name=".UsersActivity"
+            android:exported="false"
+            android:theme="@style/AmigosTheme" />
         <activity
             android:name=".CalculadoraActivity"
             android:exported="false"
-            android:theme="@style/CalculadoraTheme">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:theme="@style/CalculadoraTheme" />
         <activity
             android:name=".MenuActivity"
             android:exported="true">
