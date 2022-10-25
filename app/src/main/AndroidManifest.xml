@@ -48,6 +48,7 @@
             android:name=".QuizzesActivity"
             android:exported="false"
             android:theme="@style/QuizzesTheme" />
+  
         <activity
             android:name=".EdadCaninaActivity"
             android:exported="false"

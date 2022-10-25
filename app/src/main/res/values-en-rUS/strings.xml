@@ -16,9 +16,25 @@
 
     <!-- MI EDAD CANINA -->
     <string name="edadCanina_title">CANINE AGE</string>
+    <string name="result_format">If you were a dog, you would be %d years old</string>
+    <string name="you_have_to_insert_an_age">You have to insert an age.</string>
+    <string name="calculate">Calculate</string>
+    <string name="how_old_are_you">How old are you?</string>
+    <string name="your_age">Your age</string>
 
     <!-- CALCULADORA -->
     <string name="calculator_title">CALCULATOR</string>
+    <string name="welcome">Welcome to my calculator app</string>
+    <string name="ask_for_number1">Write the first number</string>
+    <string name="ask_for_number2">Write the second number</string>
+    <string name="number1">Number 1</string>
+    <string name="number2">Number 2</string>
+    <string name="btn_text_addition">Add</string>
+    <string name="btn_text_subtraction">Sub</string>
+    <string name="btn_text_multiplication">Mul</string>
+    <string name="btn_text_division">Div</string>
+    <string name="result">The result of the operation is: </string>
+    <string name="inputNumber">Debes introducir un numero </string>
 
     <!-- QUIZZES -->
     <string name="quizzes_title">QUESTIONAIRE</string>
