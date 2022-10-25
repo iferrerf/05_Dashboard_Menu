@@ -1,9 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MarcadorBaloncestoActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#870000"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:padding="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:src="@drawable/pista_basket" />
+
+        <LinearLayout
+            android:id="@+id/center_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageButton
+                android:id="@+id/restart_button"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:padding="16dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/red_vdark"
+                android:src="@drawable/ic_baseline_restart_alt_24" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:src="@drawable/basket_ball" />
+
+            <ImageButton
+                android:id="@+id/result_button"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/red_vdark"
+                android:padding="16dp"
+                android:src="@drawable/ic_baseline_trending_flat_24" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/local_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:text="Local"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/visitor_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:text="Visitante"
+            android:paddingBottom="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_above="@id/center_layout"
+            android:layout_below="@+id/local_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/local_minus_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- 1"
+                android:layout_marginLeft="10dp"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/local_score_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="72sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/local_sumar_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+ 1"
+
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/local_sumar_dos_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+ 2"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_above="@id/visitor_text"
+            android:layout_below="@+id/center_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/visitor_minus_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- 1"
+                android:layout_marginLeft="10dp"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/visitor_score_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="72sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/visitor_sumar_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+ 1"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/visitor_sumar_dos_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+ 2"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

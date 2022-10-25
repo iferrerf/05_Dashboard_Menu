@@ -12,29 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar"
         tools:targetApi="31">
-        <activity
-            android:name=".QuizzesResultActivity"
-            android:exported="false"
-            android:theme="@style/QuizzesTheme">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+
+
         <activity
             android:name=".ProgrammerActivity"
             android:exported="false"
             android:theme="@style/UserTheme">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
         </activity>
         <activity
             android:name=".MarcadorBaloncestoActivity"
             android:exported="false"
             android:theme="@style/MarketTheme">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
+        </activity>
+        <activity
+            android:name=".MarcadorBaloncestoScoreActivity"
+            android:exported="false">
         </activity>
         <activity
             android:name=".SettingsActivity"
@@ -56,6 +48,11 @@
             android:name=".QuizzesActivity"
             android:exported="false"
             android:theme="@style/QuizzesTheme" />
+        <activity
+            android:name=".QuizzesResultActivity"
+            android:exported="false"
+            android:theme="@style/QuizzesTheme">
+        </activity>
         <activity
             android:name=".EdadCaninaActivity"
             android:exported="false"

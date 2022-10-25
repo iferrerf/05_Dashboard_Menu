@@ -120,7 +120,7 @@ public class QuizzesActivity extends AppCompatActivity {
 
         switch (PreguntasRespuestas.rutaImagenes[preguntaSeleccionadaIndex]) {
             case "drawable/mirambel":
-                imageView.setImageResource(R.drawable.mirambel);
+                imageView.setImageResource(R.drawable.logomirambel);
                 break;
             case "drawable/elestudio":
                 imageView.setImageResource(R.drawable.elestudio);

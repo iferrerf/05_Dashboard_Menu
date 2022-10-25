@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#F15050</color>
     <color name="red_dark">#d43c3c</color>
+    <color name="red_vdark">#870000</color>
     <color name="yellow">#EED45A</color>
     <color name="yellow_dark">#d4bb46</color>
     <color name="lime">#BCE24A</color>
