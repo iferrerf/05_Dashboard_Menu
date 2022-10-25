@@ -37,6 +37,8 @@
 
     <!-- QUIZZES -->
     <string name="quizzes_title">CUESTIONARIO</string>
+    <string name="siguiente_pregunta">Siguiente</string>
+    <string name="toas_info">Debes seleccionar una opcion</string>
 
     <!-- GALERIA -->
     <string name="galeria_title">GALERIA</string>

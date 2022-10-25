@@ -34,10 +34,12 @@
     <string name="btn_text_multiplication">Mul</string>
     <string name="btn_text_division">Div</string>
     <string name="result">The result of the operation is: </string>
-    <string name="inputNumber">Debes introducir un numero </string>
+    <string name="inputNumber">You have to insert a number </string>
 
     <!-- QUIZZES -->
     <string name="quizzes_title">QUESTIONAIRE</string>
+    <string name="siguiente_pregunta">Next</string>
+    <string name="toas_info">You have to select an option</string>
 
     <!-- GALERIA -->
     <string name="galeria_title">GALLERY</string>

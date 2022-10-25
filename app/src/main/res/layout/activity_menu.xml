@@ -427,7 +427,7 @@
                         android:id="@+id/rellay_settings"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/violet"
+                        android:background="@color/grey"
                         android:layout_weight="0.65"
                         android:clickable="true"
                         android:foreground="?attr/selectableItemBackground">
@@ -441,10 +441,10 @@
                                 android:id="@+id/imgView8"
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
-                                android:adjustViewBounds="true"
-                                android:scaleType="centerInside"
-                                android:padding="8dp"
                                 android:layout_centerHorizontal="true"
+                                android:adjustViewBounds="true"
+                                android:padding="8dp"
+                                android:scaleType="centerInside"
                                 android:src="@drawable/ic_herramientas"
                                 app:tint="@color/white" />
 
@@ -456,8 +456,8 @@
                                 android:layout_marginTop="5dp"
                                 android:text="@string/setting_name"
                                 android:textColor="@color/white"
-                                android:textStyle="bold"
-                                android:textSize="14sp" />
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
 
 
                         </RelativeLayout>
