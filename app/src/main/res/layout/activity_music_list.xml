@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicListActivity">
+
+    <fragment
+        android:id="@+id/cancion_detail_fragment"
+        android:name="org.iesch.a05_dashboard_menu.fragments.DetailMusicFragment"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        tools:layout="@layout/fragment_detail_music" />
+
+    <fragment
+        android:id="@+id/cancion_list_fragment"
+        android:name="org.iesch.a05_dashboard_menu.fragments.CancionesListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cancion_detail_fragment"
+        />
+
+</RelativeLayout>

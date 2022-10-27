@@ -12,7 +12,7 @@
     <string name="restaurant_name">Restaurants</string>
     <string name="setting_name">Settings</string>
     <string name="market_name">Basketball Market</string>
-    <string name="user_name">User Data</string>
+    <string name="music_name">Music</string>
 
     <!-- MI EDAD CANINA -->
     <string name="edadCanina_title">CANINE AGE</string>
@@ -60,6 +60,6 @@
     <string name="market_title">BASKETBALL MARKET</string>
 
     <!-- PROGRAMMER -->
-    <string name="user_title">PROGRAMMER</string>
+    <string name="music_title">MEDIA PLAYER LIST</string>
 
 </resources>

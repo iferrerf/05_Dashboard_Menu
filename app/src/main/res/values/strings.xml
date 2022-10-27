@@ -11,7 +11,7 @@
     <string name="restaurant_name">Restaurantes</string>
     <string name="setting_name">Herramientas</string>
     <string name="market_name">Marcador Baloncesto</string>
-    <string name="user_name">Datos Usuario</string>
+    <string name="music_name">Música</string>
 
     <!-- MI EDAD CANINA -->
     <string name="edadCanina_title">EDAD CANINA</string>
@@ -59,6 +59,7 @@
     <string name="market_title">MARCADOR BALONCESTO</string>
 
     <!-- PROGRAMMER -->
-    <string name="user_title">PROGRAMADOR</string>
+    <string name="music_title">LISTA DE REPRODUCCIÓN</string>
+
 
 </resources>

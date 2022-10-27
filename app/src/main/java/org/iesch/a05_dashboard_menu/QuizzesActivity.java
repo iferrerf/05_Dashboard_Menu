@@ -11,7 +11,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.iesch.a05_dashboard_menu.JavaClass.PreguntasRespuestas;
+import org.iesch.a05_dashboard_menu.JavaClass.Quizzes.model.PreguntasRespuestas;
 import org.iesch.a05_dashboard_menu.databinding.ActivityQuizzesBinding;
 
 public class QuizzesActivity extends AppCompatActivity {

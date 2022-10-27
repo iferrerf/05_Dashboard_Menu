@@ -54,7 +54,7 @@
                                 android:adjustViewBounds="true"
                                 android:padding="8dp"
                                 android:scaleType="centerInside"
-                                android:src="@drawable/user_icon"
+                                android:src="@drawable/musica"
                                 app:tint="@color/white" />
 
                             <TextView
@@ -63,7 +63,7 @@
                                 android:layout_below="@id/imgView9"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="5dp"
-                                android:text="@string/user_name"
+                                android:text="@string/music_name"
                                 android:textColor="@color/white"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />

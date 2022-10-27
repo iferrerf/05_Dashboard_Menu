@@ -12,22 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar"
         tools:targetApi="31">
-
-
         <activity
-            android:name=".ProgrammerActivity"
-            android:exported="false"
-            android:theme="@style/UserTheme">
-        </activity>
+            android:name=".MenuActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".MusicListActivity"
+            android:exported="false"/>
         <activity
             android:name=".MarcadorBaloncestoActivity"
             android:exported="false"
-            android:theme="@style/MarketTheme">
-        </activity>
+            android:theme="@style/MarketTheme"/>
         <activity
             android:name=".MarcadorBaloncestoScoreActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false"/>
         <activity
             android:name=".SettingsActivity"
             android:exported="false"
@@ -51,8 +48,7 @@
         <activity
             android:name=".QuizzesResultActivity"
             android:exported="false"
-            android:theme="@style/QuizzesTheme">
-        </activity>
+            android:theme="@style/QuizzesTheme"/>
         <activity
             android:name=".EdadCaninaActivity"
             android:exported="false"
@@ -66,7 +62,7 @@
             android:exported="false"
             android:theme="@style/CalculadoraTheme" />
         <activity
-            android:name=".MenuActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
