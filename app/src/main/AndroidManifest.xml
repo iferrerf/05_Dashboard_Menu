@@ -17,7 +17,8 @@
             android:exported="false"/>
         <activity
             android:name=".MusicListActivity"
-            android:exported="false"/>
+            android:exported="false"
+            android:theme="@style/MusicTheme"/>
         <activity
             android:name=".MarcadorBaloncestoActivity"
             android:exported="false"

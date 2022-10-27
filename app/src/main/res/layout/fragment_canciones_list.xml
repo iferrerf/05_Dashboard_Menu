@@ -9,6 +9,8 @@
         android:id="@+id/listaCanciones"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/violet_light"
+        android:divider="@android:color/transparent"
         />
 
 </FrameLayout>

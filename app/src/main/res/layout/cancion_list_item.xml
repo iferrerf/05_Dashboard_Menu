@@ -21,6 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="3"
         android:gravity="center"
+        android:textStyle="bold"
         android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
         android:text="Cancion1"/>
 
@@ -30,6 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="3"
         android:gravity="center"
+        android:textStyle="italic"
         android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
         android:text="Artista1"/>
 
@@ -39,6 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="2"
         android:gravity="center"
+        android:textSize="13dp"
         android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
         android:text="Fecha1"/>
 

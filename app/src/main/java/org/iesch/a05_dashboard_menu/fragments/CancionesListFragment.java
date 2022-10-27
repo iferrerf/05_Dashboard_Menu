@@ -86,16 +86,16 @@ public class CancionesListFragment extends Fragment {
 
         view = inflater.inflate(R.layout.fragment_canciones_list, container,  false);
         lvCancion = view.findViewById(R.id.listaCanciones);
-        cancionList.add(new Cancion(1, "All Day And Night", "Boostereo", "2/3/2022", Cancion.Type.ELECTRONIC, R.raw.all_day_and_nigth, R.drawable.all_day_and_night_img));
-        cancionList.add(new Cancion(2, "Camiseta De Rokanrol", "Estopa y Fito", "2/3/2022", Cancion.Type.POP, R.raw.camiseta_de_rokanrol, R.drawable.camiseta_de_rokanrol_img));
-        cancionList.add(new Cancion(3, "Carretera Y Manta", "Pablo Alborán", "2/3/2022", Cancion.Type.POP, R.raw.carretera_y_manta, R.drawable.carretera_y_manta_img));
-        cancionList.add(new Cancion(4, "Despecha", "Rosalía", "2/3/2022", Cancion.Type.FLAMENCO, R.raw.despecha, R.drawable.despecha_img));
-        cancionList.add(new Cancion(5, "Jindama", "Marea", "2/3/2022", Cancion.Type.ROCK, R.raw.jindama, R.drawable.jindama_img));
-        cancionList.add(new Cancion(6, "La Musiquita", "Naviles de Novelda", "2/3/2022", Cancion.Type.FLAMENCO, R.raw.la_musiquita, R.drawable.la_musiquita_img));
-        cancionList.add(new Cancion(7, "Light", "Eqric", "2/3/2022", Cancion.Type.ELECTRONIC, R.raw.light, R.drawable.light_img));
-        cancionList.add(new Cancion(8, "Long Tall Sally", "Little Richard", "2/3/2022", Cancion.Type.JAZZ, R.raw.long_tall_sally, R.drawable.long_tall_saly_img));
-        cancionList.add(new Cancion(9, "Me Encanta", "Naviles de Novelda", "2/3/2022", Cancion.Type.FLAMENCO, R.raw.me_encanta, R.drawable.me_encanta_img));
-        cancionList.add(new Cancion(10, "Your Love", "Eqric", "2/3/2022", Cancion.Type.ELECTRONIC, R.raw.your_love, R.drawable.your_love_img));
+        cancionList.add(new Cancion(1, "All Day And Night", "Boostereo", "2022", Cancion.Type.ELECTRONIC, R.raw.all_day_and_nigth, R.drawable.all_day_and_night_img));
+        cancionList.add(new Cancion(2, "Camiseta De Rokanrol", "Estopa y Fito", "2019", Cancion.Type.POP, R.raw.camiseta_de_rokanrol, R.drawable.camiseta_de_rokanrol_img));
+        cancionList.add(new Cancion(3, "Carretera Y Manta", "Pablo Alborán", "2022", Cancion.Type.POP, R.raw.carretera_y_manta, R.drawable.carretera_y_manta_img));
+        cancionList.add(new Cancion(4, "Despecha", "Rosalía", "2022", Cancion.Type.FLAMENCO, R.raw.despecha, R.drawable.despecha_img));
+        cancionList.add(new Cancion(5, "Jindama", "Marea", "2001", Cancion.Type.ROCK, R.raw.jindama, R.drawable.jindama_img));
+        cancionList.add(new Cancion(6, "La Musiquita", "Naviles de Novelda", "2022", Cancion.Type.FLAMENCO, R.raw.la_musiquita, R.drawable.la_musiquita_img));
+        cancionList.add(new Cancion(7, "Light", "Eqric", "2022", Cancion.Type.ELECTRONIC, R.raw.light, R.drawable.light_img));
+        cancionList.add(new Cancion(8, "Long Tall Sally", "Little Richard", "2022", Cancion.Type.JAZZ, R.raw.long_tall_sally, R.drawable.long_tall_saly_img));
+        cancionList.add(new Cancion(9, "Me Encanta", "Naviles de Novelda", "2021", Cancion.Type.FLAMENCO, R.raw.me_encanta, R.drawable.me_encanta_img));
+        cancionList.add(new Cancion(10, "Your Love", "Eqric", "2022", Cancion.Type.ELECTRONIC, R.raw.your_love, R.drawable.your_love_img));
 
         adaptador = new CancionesListAdapter(getActivity(), cancionList, R.id.cancion_list_fragment);
         lvCancion.setAdapter(adaptador);

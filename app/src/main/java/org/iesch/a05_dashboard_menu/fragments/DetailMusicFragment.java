@@ -23,7 +23,7 @@ public class DetailMusicFragment extends Fragment {
     // Declaraciones
     private ImageView detailImageView;
     private static boolean musicAciva = false;
-    private MediaPlayer mediaPlayer;
+    public static MediaPlayer mediaPlayer;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

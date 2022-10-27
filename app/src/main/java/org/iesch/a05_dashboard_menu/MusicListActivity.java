@@ -1,5 +1,7 @@
 package org.iesch.a05_dashboard_menu;
 
+import static org.iesch.a05_dashboard_menu.fragments.DetailMusicFragment.mediaPlayer;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.MediaPlayer;
@@ -27,7 +29,6 @@ public class MusicListActivity extends AppCompatActivity implements iComunicaMus
         Toast.makeText(this, cancion.getName(), Toast.LENGTH_SHORT).show();
 
         detalleFragmentCancion = (DetailMusicFragment) getSupportFragmentManager().findFragmentById(R.id.cancion_detail_fragment);
-
         detalleFragmentCancion.setCancionImage(cancion.getImageId());
         detalleFragmentCancion.playCancionSound(cancion.getSoundId());
     }
