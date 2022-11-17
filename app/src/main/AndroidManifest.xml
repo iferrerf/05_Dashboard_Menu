@@ -13,19 +13,26 @@
         android:theme="@style/Theme.Design.Light.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MenuActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".MusicListActivity"
             android:exported="false"
-            android:theme="@style/MusicTheme"/>
+            android:theme="@style/MusicTheme" />
         <activity
             android:name=".MarcadorBaloncestoActivity"
             android:exported="false"
-            android:theme="@style/MarketTheme"/>
+            android:theme="@style/MarketTheme" />
         <activity
             android:name=".MarcadorBaloncestoScoreActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".SettingsActivity"
             android:exported="false"
@@ -49,7 +56,7 @@
         <activity
             android:name=".QuizzesResultActivity"
             android:exported="false"
-            android:theme="@style/QuizzesTheme"/>
+            android:theme="@style/QuizzesTheme" />
         <activity
             android:name=".EdadCaninaActivity"
             android:exported="false"

@@ -1,5 +1,10 @@
 <resources>
 
+    <!-- LOGIN -->
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="logIn">ENTRAR</string>
+
     <!-- MENU PRINCIPAL -->
     <string name="app_name">05_Dashboard_Menu</string>
     <string name="calculator_name">Calculadora</string>
@@ -60,6 +65,9 @@
 
     <!-- PROGRAMMER -->
     <string name="music_title">LISTA DE REPRODUCCIÓN</string>
+
+    <!-- SALIR -->
+    <string name="exit_name">Salir</string>
 
 
 </resources>

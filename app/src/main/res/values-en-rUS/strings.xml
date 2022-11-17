@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- LOGIN -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="logIn">Enter</string>
+
     <!-- MENU PRINCIPAL -->
     <string name="app_name">05_Dashboard_Menu</string>
     <string name="calculator_name">Calculator</string>
@@ -61,5 +66,9 @@
 
     <!-- PROGRAMMER -->
     <string name="music_title">MEDIA PLAYER LIST</string>
+
+    <!-- SALIR -->
+    <string name="exit_name">Exit</string>
+
 
 </resources>
