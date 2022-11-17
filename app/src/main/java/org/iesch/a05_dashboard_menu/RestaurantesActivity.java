@@ -3,17 +3,17 @@ package org.iesch.a05_dashboard_menu;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
 
 import org.iesch.a05_dashboard_menu.JavaClass.Pizza.API.PizzaApiService;
-import org.iesch.a05_dashboard_menu.JavaClass.Pizza.PizzaRespuesta;
 import org.iesch.a05_dashboard_menu.JavaClass.Pizza.adapter.ListaPizzaAdapter;
 import org.iesch.a05_dashboard_menu.JavaClass.Pizza.model.Pizza;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -27,10 +27,6 @@ public class RestaurantesActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private ListaPizzaAdapter listaPizzaAdapter;
 
-    private int offset;
-
-    private boolean aptoParaCargar;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,62 +37,34 @@ public class RestaurantesActivity extends AppCompatActivity {
         listaPizzaAdapter = new ListaPizzaAdapter(this);
         recyclerView.setAdapter(listaPizzaAdapter);
 
-        recyclerView.setHasFixedSize(true);
-        GridLayoutManager layoutManager = new GridLayoutManager(this, 1);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        // El RecyclerView detecta el movimiento con este Scroll
-        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
-            @Override
-            public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
-                super.onScrolled(recyclerView, dx, dy);
-
-                // Hacemos una serie de preguntas para preguntar si el scroll es hacia abajo y llegó al ultimo item
-                int visibleItemCount = layoutManager.getChildCount();
-                int totalItemCount = layoutManager.getItemCount();
-                int pastVisibleItems = layoutManager.findFirstVisibleItemPosition();
-                //Creo aptoparaCargar para controlar las llamadas a la API
-                if (aptoParaCargar){
-                    if ((visibleItemCount + pastVisibleItems) >= totalItemCount){
-                        Log.i("PIZZA","Llegamos al Final");
-                        aptoParaCargar = false;
-                        offset += 20;
-                        obtenerDatos(offset);
-                    }
-                }
-
-            }
-        });
-
         retrofit = new Retrofit.Builder()
-                .baseUrl("http://private-3cc5a4-codingpizza.apiary-mock.com")
+                .baseUrl("https://private-anon-2da0e872d7-codingpizza.apiary-mock.com/v2/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
-        aptoParaCargar=true;
-        offset=0;
-        obtenerDatos(offset);
+        obtenerDatos();
 
     }
 
-    private void obtenerDatos(int offset){
+    private void obtenerDatos(){
         PizzaApiService service = retrofit.create(PizzaApiService.class);
 
-        Call<PizzaRespuesta> pizzaRespuestaCall = service.obtenerListaPizzas(4, offset);
+        Call<List<Pizza>> pizzaRespuestaCall = service.obtenerListaPizzas();
 
-        pizzaRespuestaCall.enqueue(new Callback<PizzaRespuesta>() {
+        pizzaRespuestaCall.enqueue(new Callback<List<Pizza>>() {
             @Override
-            public void onResponse(Call<PizzaRespuesta> call, Response<PizzaRespuesta> response) {
+            public void onResponse(Call<List<Pizza>> call, Response<List<Pizza>> response) {
 
-                aptoParaCargar = true;
                 if (response.isSuccessful()){
-                    PizzaRespuesta pizzaRespuesta = response.body();
 
-                    ArrayList<Pizza> listaPizza = pizzaRespuesta.getResults();
+                    Log.i("PIZZA", "onResponse: "+response.body().toString());
 
                     // Cuando recibimos los datos ya no los mostramos por consola
                     // se los mandamos al adaptador por medio de un metodo
-                    listaPizzaAdapter.adicionarPizza(listaPizza);
+                    listaPizzaAdapter.adicionarPizza(response.body());
 
                 }else{
                     Log.i("PIZZA", "onResponse: "+response.errorBody());
@@ -104,8 +72,7 @@ public class RestaurantesActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<PizzaRespuesta> call, Throwable t) {
-                aptoParaCargar = true;
+            public void onFailure(Call<List<Pizza>> call, Throwable t) {
                 Log.i("PIZZA", "onFailure: "+t.getMessage());
             }
         });

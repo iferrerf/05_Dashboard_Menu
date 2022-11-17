@@ -38,7 +38,7 @@ public class MenuActivity extends AppCompatActivity {
             Obj_editor.putString("pass","");
             Obj_editor.commit();
 
-            DetailMusicFragment.mediaPlayer.stop();
+            //DetailMusicFragment.mediaPlayer.stop();
 
             Intent i = new Intent(MenuActivity.this, LoginActivity.class);
             startActivity(i);

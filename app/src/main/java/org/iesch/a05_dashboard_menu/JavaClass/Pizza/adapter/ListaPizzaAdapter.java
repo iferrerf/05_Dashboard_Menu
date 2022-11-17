@@ -1,6 +1,7 @@
 package org.iesch.a05_dashboard_menu.JavaClass.Pizza.adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,12 +18,13 @@ import org.iesch.a05_dashboard_menu.JavaClass.Pizza.model.Pizza;
 import org.iesch.a05_dashboard_menu.R;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ListaPizzaAdapter extends RecyclerView.Adapter<ListaPizzaAdapter.ViewHolder> {
 
 
     // Creamos la lista de pizzas y el contexto
-    private ArrayList<Pizza> listaPizzas;
+    private List<Pizza> listaPizzas;
     private Context context;
 
     public ListaPizzaAdapter(Context context) {
@@ -43,6 +45,9 @@ public class ListaPizzaAdapter extends RecyclerView.Adapter<ListaPizzaAdapter.Vi
     public void onBindViewHolder(@NonNull ListaPizzaAdapter.ViewHolder holder, int position) {
         // Cargamos el nombre y la descripcion de cada pizza
         Pizza pizza = listaPizzas.get(position);
+
+        Log.i("PIZZA", "onResponse: "+ pizza.toString());
+
         holder.nombreTextView.setText(pizza.getName());
         holder.descripcionTextView.setText(pizza.getDescription());
 
@@ -61,8 +66,8 @@ public class ListaPizzaAdapter extends RecyclerView.Adapter<ListaPizzaAdapter.Vi
     }
 
     // Permitimos que el Arraylist que llega lo junte con el arraylist del adaptador
-    public void adicionarPizza(ArrayList<Pizza> listaPizzas) {
-        listaPizzas.addAll(listaPizzas);
+    public void adicionarPizza(List<Pizza> listaPizzas) {
+        this.listaPizzas.addAll(listaPizzas);
         // Con este metodo actualizaremos el recyclerView en la pantalla
         notifyDataSetChanged();
     }
@@ -78,9 +83,9 @@ public class ListaPizzaAdapter extends RecyclerView.Adapter<ListaPizzaAdapter.Vi
             super(itemView);
 
             // Asignamos los elementos creados con los que tenemos en el item_restaurantes.xml
-            fotoImageView = itemView.findViewById(R.id.fotoImageView);
-            nombreTextView = itemView.findViewById(R.id.nombreTextView);
-            descripcionTextView = itemView.findViewById(R.id.descipcionTextView);
+            fotoImageView = itemView.findViewById(R.id.fotoPizzaImageView);
+            nombreTextView = itemView.findViewById(R.id.nombrePizzaTextView);
+            descripcionTextView = itemView.findViewById(R.id.descipcionPizzaTextView);
         }
     }
 }
