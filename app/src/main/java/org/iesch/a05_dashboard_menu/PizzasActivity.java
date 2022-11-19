@@ -1,8 +1,6 @@
 package org.iesch.a05_dashboard_menu;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -21,7 +19,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class RestaurantesActivity extends AppCompatActivity {
+public class PizzasActivity extends AppCompatActivity {
 
     private Retrofit retrofit;
     private RecyclerView recyclerView;
@@ -30,8 +28,8 @@ public class RestaurantesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_restaurantes);
-        setTitle(R.string.restaurantes_title);
+        setContentView(R.layout.activity_pizzas);
+        setTitle(R.string.pizza_title);
 
         recyclerView = findViewById(R.id.recyclerView);
         listaPizzaAdapter = new ListaPizzaAdapter(this);

@@ -37,7 +37,7 @@ public class ListaPizzaAdapter extends RecyclerView.Adapter<ListaPizzaAdapter.Vi
     @Override
     public ListaPizzaAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         // Creamos una vista inflando item_restaurantes desde el parent
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_restaurante, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_pizzas, parent, false);
         return new ViewHolder(view);
     }
 

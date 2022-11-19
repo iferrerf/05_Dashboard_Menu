@@ -9,13 +9,10 @@
     <!-- MENU PRINCIPAL -->
     <string name="app_name">05_Dashboard_Menu</string>
     <string name="calculator_name">Calculator</string>
-    <string name="contacts_name">Contacts</string>
     <string name="canineAge_name">Canine Age</string>
     <string name="quizzes_name">App Quizzes</string>
     <string name="maps_name">Maps</string>
-    <string name="gallery_name">Gallery</string>
-    <string name="restaurant_name">Restaurants</string>
-    <string name="setting_name">Settings</string>
+    <string name="pizza_name">Pizzas</string>
     <string name="market_name">Basketball Market</string>
     <string name="music_name">Music</string>
 
@@ -52,14 +49,8 @@
     <!-- MAPAS -->
     <string name="mapas_title">MAPS</string>
 
-    <!-- RESTAURANTES -->
-    <string name="restaurantes_title">RESTAURANTS</string>
-
-    <!-- HERRAMIENTAS -->
-    <string name="setting_title">SETTINGS</string>
-
-    <!-- CONTACTOS -->
-    <string name="contactos_title">CONTACTS</string>
+    <!-- PIZZAS -->
+    <string name="pizza_title">Pizza</string>
 
     <!-- MARCADOR BALONCESTO -->
     <string name="market_title">BASKETBALL MARKET</string>

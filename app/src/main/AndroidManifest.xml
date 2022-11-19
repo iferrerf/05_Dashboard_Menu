@@ -2,9 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,7 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBLLGeUocOneqSmoF5i-S7kB2WSpJR9AMc" />
+
         <activity
             android:name=".LoginActivity"
             android:exported="false">
@@ -24,6 +29,10 @@
         <activity
             android:name=".MenuActivity"
             android:exported="false" />
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false"
+            android:theme="@style/MapasTheme" />
         <activity
             android:name=".MusicListActivity"
             android:exported="false"
@@ -36,21 +45,10 @@
             android:name=".MarcadorBaloncestoScoreActivity"
             android:exported="false" />
         <activity
-            android:name=".SettingsActivity"
+            android:name=".PizzasActivity"
             android:exported="false"
-            android:theme="@style/SettingsTheme" />
-        <activity
-            android:name=".RestaurantesActivity"
-            android:exported="false"
-            android:theme="@style/RestauranteTheme" />
-        <activity
-            android:name=".MapsActivity"
-            android:exported="false"
-            android:theme="@style/MapasTheme" />
-        <activity
-            android:name=".GaleriaActivity"
-            android:exported="false"
-            android:theme="@style/GaleriaTheme" />
+            android:theme="@style/PizzaTheme" />
+
         <activity
             android:name=".QuizzesActivity"
             android:exported="false"
@@ -63,10 +61,6 @@
             android:name=".EdadCaninaActivity"
             android:exported="false"
             android:theme="@style/PerreteTheme" />
-        <activity
-            android:name=".UsersActivity"
-            android:exported="false"
-            android:theme="@style/AmigosTheme" />
         <activity
             android:name=".CalculadoraActivity"
             android:exported="false"

@@ -31,93 +31,6 @@
                     android:layout_weight="1"
                     android:layout_marginBottom="8dp">
 
-                    <RelativeLayout
-                        android:id="@+id/rellay_user"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/violet"
-                        android:layout_weight="0.55"
-                        android:clickable="true"
-                        android:layout_marginEnd="8dp"
-                        android:foreground="?attr/selectableItemBackground">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_centerInParent="true">
-
-                            <ImageView
-                                android:id="@+id/imgView9"
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:layout_centerHorizontal="true"
-                                android:adjustViewBounds="true"
-                                android:padding="8dp"
-                                android:scaleType="centerInside"
-                                android:src="@drawable/musica"
-                                app:tint="@color/white" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/imgView9"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="5dp"
-                                android:text="@string/music_name"
-                                android:textColor="@color/white"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
-
-
-                        </RelativeLayout>
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:id="@+id/rellay_marcadorBaloncesto"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/orange"
-                        android:layout_weight="0.65"
-                        android:clickable="true"
-                        android:foreground="?attr/selectableItemBackground">
-
-                        <RelativeLayout
-                            android:layout_width="165dp"
-                            android:layout_height="108dp"
-                            android:layout_centerInParent="true">
-
-                            <ImageView
-                                android:id="@+id/imgView10"
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:layout_centerHorizontal="true"
-                                android:adjustViewBounds="true"
-                                android:padding="8dp"
-                                android:scaleType="centerInside"
-                                android:src="@drawable/baloncesto"
-                                app:tint="@color/white" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/imgView10"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="5dp"
-                                android:text="@string/market_name"
-                                android:textColor="@color/white"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
-
-
-                        </RelativeLayout>
-                    </RelativeLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:layout_marginBottom="8dp">
 
                     <RelativeLayout
                         android:id="@+id/rellay_calculadora"
@@ -161,40 +74,40 @@
                     </RelativeLayout>
 
                     <RelativeLayout
-                        android:id="@+id/rellay_amigos"
+                        android:id="@+id/rellay_marcadorBaloncesto"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/yellow"
-                        android:layout_weight="0.55"
+                        android:background="@color/orange"
+                        android:layout_weight="0.65"
                         android:clickable="true"
                         android:foreground="?attr/selectableItemBackground">
 
                         <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_width="165dp"
+                            android:layout_height="108dp"
                             android:layout_centerInParent="true">
 
                             <ImageView
-                                android:id="@+id/imgView2"
+                                android:id="@+id/imgView10"
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:layout_centerHorizontal="true"
                                 android:adjustViewBounds="true"
                                 android:padding="8dp"
                                 android:scaleType="centerInside"
-                                android:src="@drawable/ic_amigos"
+                                android:src="@drawable/baloncesto"
                                 app:tint="@color/white" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@id/imgView2"
+                                android:layout_below="@id/imgView10"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="5dp"
-                                android:text="@string/contacts_name"
+                                android:text="@string/market_name"
                                 android:textColor="@color/white"
-                                android:textStyle="bold"
-                                android:textSize="14sp" />
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
 
 
                         </RelativeLayout>
@@ -287,6 +200,7 @@
 
                         </RelativeLayout>
                     </RelativeLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -295,12 +209,14 @@
                     android:layout_weight="1"
                     android:layout_marginBottom="8dp">
 
+
+
                     <RelativeLayout
-                        android:id="@+id/rellay_galeria"
+                        android:id="@+id/rellay_restaurantes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/blue"
-                        android:layout_weight="0.65"
+                        android:background="@color/darkviolet"
+                        android:layout_weight="0.55"
                         android:clickable="true"
                         android:layout_marginEnd="8dp"
                         android:foreground="?attr/selectableItemBackground">
@@ -311,31 +227,30 @@
                             android:layout_centerInParent="true">
 
                             <ImageView
-                                android:id="@+id/imgView5"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
+                                android:id="@+id/imgView7"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
                                 android:layout_centerHorizontal="true"
                                 android:adjustViewBounds="true"
                                 android:padding="8dp"
                                 android:scaleType="centerInside"
-                                app:tint="@color/white"
-                                android:src="@drawable/ic_gallery" />
+                                android:src="@drawable/ic_pizza"
+                                app:tint="@color/white" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@id/imgView5"
+                                android:layout_below="@id/imgView7"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="5dp"
-                                android:text="@string/gallery_name"
+                                android:text="@string/pizza_name"
                                 android:textColor="@color/white"
-                                android:textStyle="bold"
-                                android:textSize="14sp" />
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
 
 
                         </RelativeLayout>
                     </RelativeLayout>
-
                     <RelativeLayout
                         android:id="@+id/rellay_mapas"
                         android:layout_width="match_parent"
@@ -369,93 +284,6 @@
                                 android:layout_marginTop="5dp"
                                 android:text="@string/maps_name"
                                 android:textColor="@color/white"
-                                android:textStyle="bold"
-                                android:textSize="14sp" />
-
-
-                        </RelativeLayout>
-                    </RelativeLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
-
-                    <RelativeLayout
-                        android:id="@+id/rellay_restaurantes"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/darkviolet"
-                        android:layout_weight="0.55"
-                        android:clickable="true"
-                        android:layout_marginEnd="8dp"
-                        android:foreground="?attr/selectableItemBackground">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_centerInParent="true">
-
-                            <ImageView
-                                android:id="@+id/imgView7"
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:layout_centerHorizontal="true"
-                                android:adjustViewBounds="true"
-                                android:padding="8dp"
-                                android:scaleType="centerInside"
-                                android:src="@drawable/ic_restaurants"
-                                app:tint="@color/white" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/imgView7"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="5dp"
-                                android:text="@string/restaurant_name"
-                                android:textColor="@color/white"
-                                android:textStyle="bold"
-                                android:textSize="14sp" />
-
-
-                        </RelativeLayout>
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:id="@+id/rellay_settings"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/grey"
-                        android:layout_weight="0.65"
-                        android:clickable="true"
-                        android:foreground="?attr/selectableItemBackground">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_centerInParent="true">
-
-                            <ImageView
-                                android:id="@+id/imgView8"
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:layout_centerHorizontal="true"
-                                android:adjustViewBounds="true"
-                                android:padding="8dp"
-                                android:scaleType="centerInside"
-                                android:src="@drawable/ic_herramientas"
-                                app:tint="@color/white" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/imgView8"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="5dp"
-                                android:text="@string/setting_name"
-                                android:textColor="@color/white"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
 
@@ -468,13 +296,63 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rellay_music"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/violet"
+                        android:layout_weight="0.55"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/imgView9"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerHorizontal="true"
+                                android:adjustViewBounds="true"
+                                android:padding="8dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/musica"
+                                app:tint="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imgView9"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/music_name"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1.07">
 
                     <RelativeLayout
                         android:id="@+id/rellay_salir"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/black2"
+                        android:background="@color/grey"
                         android:layout_weight="0.55"
                         android:clickable="true"
                         android:foreground="?attr/selectableItemBackground">

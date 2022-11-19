@@ -8,13 +8,10 @@
     <!-- MENU PRINCIPAL -->
     <string name="app_name">05_Dashboard_Menu</string>
     <string name="calculator_name">Calculadora</string>
-    <string name="contacts_name">Contactos</string>
     <string name="canineAge_name">Edad Canina</string>
     <string name="quizzes_name">Formulario</string>
     <string name="maps_name">Mapas</string>
-    <string name="gallery_name">Galería de fotos</string>
-    <string name="restaurant_name">Restaurantes</string>
-    <string name="setting_name">Herramientas</string>
+    <string name="pizza_name">Pizzas</string>
     <string name="market_name">Marcador Baloncesto</string>
     <string name="music_name">Música</string>
 
@@ -51,14 +48,8 @@
     <!-- MAPAS -->
     <string name="mapas_title">MAPAS</string>
 
-    <!-- RESTAURANTES -->
-    <string name="restaurantes_title">RESTAURANTES</string>
-
-    <!-- HERRAMIENTAS -->
-    <string name="setting_title">HERRAMIENTAS</string>
-
-    <!-- CONTACTOS -->
-    <string name="contactos_title">CONTACTOS</string>
+    <!-- PIZZAS -->
+    <string name="pizza_title">Pizza</string>
 
     <!-- MARCADOR BALONCESTO -->
     <string name="market_title">MARCADOR BALONCESTO</string>
@@ -68,6 +59,7 @@
 
     <!-- SALIR -->
     <string name="exit_name">Salir</string>
+    <string name="title_activity_maps">MapsActivity</string>
 
 
 </resources>
