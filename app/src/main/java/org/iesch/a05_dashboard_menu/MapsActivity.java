@@ -75,11 +75,6 @@ public class MapsActivity<onMapReady> extends FragmentActivity implements OnMapR
             LatLng posicion = new LatLng(r.getLatitud(),r.getLongitud());
             String nombre = r.getNombre().toString();
 
-            mMap.addMarker(new MarkerOptions()
-                    .position(posicion)
-
-                    .title(nombre));
-
             int iconId = 0;
             switch (nombre) {
                 case "IES Segundo de Chomón":
